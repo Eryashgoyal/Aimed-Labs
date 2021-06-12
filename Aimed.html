@@ -1,0 +1,75 @@
+<style>
+.element {
+  height: 100px;
+  width: 100px;
+border: 2px solid black;
+  background-color: solid black;
+  animation: 
+    pulse 4s linear infinite alternate, 
+    nudge 5s linear infinite alternate;
+  border-radius: 0%;
+}
+
+.element1 {
+  height: 100px;
+  width: 100px;
+border: 2px solid black;
+  background-color: blue;
+  animation: 
+  border-radius: 0%;
+}
+
+.ele {
+  height: 100px;
+  width: 100px;
+margin-left:100px;
+  background-color: red;
+  border-radius: 0%;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: green;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+  
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+<div class="element1"> 
+
+
+</div>
+
+<div class="element"></div>
+
+<div class="ele"> 
+
+
+</div>
+
